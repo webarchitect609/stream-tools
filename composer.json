@@ -1,0 +1,40 @@
+{
+  "name": "webarchitect609/stream-tools",
+  "description": "Useful filters and other tools to be used with PHP Stream Functions.",
+  "keywords": [
+    "stream",
+    "stream filter",
+    "stream_filter_register",
+    "stream_filter_append"
+  ],
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Sergey Gripinskiy",
+      "email": "web-architect@mail.ru",
+      "role": "Author"
+    }
+  ],
+  "require": {
+    "php": "^7.2"
+  },
+  "require-dev": {
+    "friendsofphp/php-cs-fixer": "^2.16",
+    "phpunit/phpunit": "^8.5"
+  },
+  "autoload": {
+    "psr-4": {
+      "WebArch\\StreamTools\\": "src/main"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "WebArch\\StreamTools\\Test\\": "src/test"
+    }
+  },
+  "scripts": {
+    "test": "vendor/bin/phpunit",
+    "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
+  }
+}
